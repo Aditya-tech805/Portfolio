@@ -12,10 +12,10 @@
 }
 
 :root {
-    --bg-color: #191f36;
-    --snd-bg-color: #262840;
-    --text-color: #fff;
-    --main-color: #59B2F4;
+    --bg-color: #f5f7fa;  /* Lighter background */
+    --snd-bg-color: #e0e7ff;  /* Light grayish blue for secondary background */
+    --text-color: #333;  /* Darker text for contrast */
+    --main-color: #4A90E2;  /* Soft blue for highlights */
 }
 
 html {
@@ -62,7 +62,7 @@ section {
 
 .nav a:hover,
 .navbar a.active {
-    color: orange;
+    color: var(--main-color);
 }
 
 #menu-ic {
@@ -165,7 +165,7 @@ span {
     background: var(--snd-bg-color);
     height: 78rem;
 }
-.about img{
+.about img {
     border-radius: 50%;
 }
 .about-img img {
@@ -382,7 +382,6 @@ span {
     color: var(--snd-bg-color);
 }
 
-
 .education {
     background: var(--bg-color);
     padding: 10rem 9% 5rem;
@@ -475,17 +474,17 @@ span {
         left: 0;
         width: 100%;
         padding: 1rem 3%;
-        background:var(--bg-color);
-        border-top: 1rem solid rgba(0,0,0,.2);
-        box-shadow: 0 .5rem 1rem rgba(0,0,0,.2) ;
+        background: var(--bg-color);
+        border-top: 1rem solid rgba(0, 0, 0, 0.2);
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.2);
         display: none;
     }
 
-    .nav.active{
+    .nav.active {
         display: block;
     }
 
-    .nav a{
+    .nav a {
         display: block;
         font-size: 2rem;
         margin: 3rem 0;
